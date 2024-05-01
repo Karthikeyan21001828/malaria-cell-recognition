@@ -5,20 +5,47 @@
 To develop a deep neural network for Malaria infected cell recognition and to analyze the performance.
 
 ## Problem Statement and Dataset
+It involves achieving high accuracy in classifying malaria-infected cells versus uninfected cells to aid in the diagnosis of malaria from microscopic images. Your task would be to optimize the model, possibly by tuning hyperparameters, trying different architectures, or using techniques like transfer learning to improve classification accuracy.
+
+![image](https://github.com/Karthikeyan21001828/malaria-cell-recognition/assets/93427303/85c0633d-9df2-4d72-a44f-93c22163bd1f)
 
 ## Neural Network Model
 
-Include the neural network model diagram.
+![image](https://github.com/Karthikeyan21001828/malaria-cell-recognition/assets/93427303/9ef16a59-612c-471d-b63f-5be6ce38a243)
 
 ## DESIGN STEPS
 
 ### STEP 1:
-
+Import necessary libraries for data manipulation, visualization, and deep learning.
 ### STEP 2:
-
+Set up TensorFlow session to dynamically allocate GPU memory and log device placement.
 ### STEP 3:
+Define the directory paths for the dataset and inspect their contents.
+### STEP 4:
+Load sample images from both classes (infected and uninfected) for visualization.
+### STEP 5:
+Explore image dimensions and distributions in the dataset using seaborn.
+### STEP 6:
+Define the image shape and construct a sequential model using Keras.
+### STEP 7:
+Add convolutional and pooling layers to the model architecture.
+### STEP 8:
+Flatten the layer and add dense layers with activation functions.
+### STEP 9:
+Compile the model specifying loss function, optimizer, and evaluation metrics.
+### STEP 10:
+Configure image data augmentation using ImageDataGenerator.
+### STEP 11:
+Set batch size and generate training and testing data batches.
+### STEP 12:
+Train the model on the training data for a specified number of epochs.
+### STEP 13:
+Evaluate the model's performance on the test data and visualize training history.
+### STEP 14:
+Generate predictions on the test data and calculate classification metrics.
+### STEP 15:
+Use random image selection for inference and display the prediction result.
 
-Write your own steps
 
 ## PROGRAM
 
@@ -183,3 +210,4 @@ confusion_matrix(test_image_gen.classes,predictions)
 ![image](https://github.com/Karthikeyan21001828/malaria-cell-recognition/assets/93427303/a1ac0f42-4a18-4f86-be48-d33a8b2fcf98)
 
 ## RESULT
+Thus, a deep neural network for Malaria infected cell recognition is developed and the performance is analyzed.
